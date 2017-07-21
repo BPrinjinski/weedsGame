@@ -30,14 +30,11 @@ if(file_exists("testMap.txt"))
 height = ds_grid_height(mapGrid);
 width = ds_grid_width(mapGrid);
 
-view_wview[0] = window_get_width();
-view_hview[0] = window_get_height();
-
 // Center the map on the screen
-mapLeft = (view_wview[0] / 2) - ((width * CELL_WIDTH) / 2);
-mapTop = (view_hview[0] / 2) - ((height * CELL_HEIGHT) / 2);
+//mapLeft = (view_wview[0] / 2) - ((width * CELL_WIDTH) / 2);
+//mapTop = (view_hview[0] / 2) - ((height * CELL_HEIGHT) / 2);
 
-
+/*
 for(var i = 0; i < width; i++)
 {
     for(var j = 0; j < height; j++)
@@ -57,5 +54,5 @@ for(var i = 0; i < width; i++)
     }
 }
 
-
+*/
 

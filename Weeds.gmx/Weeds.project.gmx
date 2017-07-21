@@ -24,7 +24,10 @@
   </datafiles>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\drop_full</sprite>
+    <sprite>sprites\drop_empty</sprite>
+  </sprites>
   <backgrounds name="background">
     <background>background\tileset</background>
   </backgrounds>
@@ -32,14 +35,20 @@
   <scripts name="scripts">
     <script>scripts\generateMap.gml</script>
     <script>scripts\init_window.gml</script>
+    <script>scripts\game_setup.gml</script>
+    <script>scripts\init_player.gml</script>
+    <script>scripts\render_map.gml</script>
+    <script>scripts\water_check.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\init_manager</object>
-    <object>objects\init_map</object>
+    <object>objects\game_manager</object>
+    <object>objects\player</object>
+    <object>objects\water_drop</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\initRoom</room>
     <room>rooms\testRoom</room>
+    <room>rooms\initRoom</room>
   </rooms>
   <constants number="2">
     <constant name="CELL_HEIGHT">32</constant>
