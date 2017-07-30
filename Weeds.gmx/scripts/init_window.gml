@@ -15,9 +15,9 @@ if(ideal_width & 1)
 
 // Init the window
 window_set_size(ideal_width, ideal_height);
-/*
 surface_resize(application_surface, ideal_width, ideal_height);
-window_center();
+alarm_set(0,1);
+
 view_wview[0] = window_get_width();
 view_hview[0] = window_get_height();
 
@@ -30,8 +30,7 @@ for(var i=0; i<=room_last; i++)
         room_set_view(i,0,true,0,0,ideal_width,ideal_height,0,0,ideal_width,ideal_height,0,0,0,0,-1);
         room_set_view_enabled(i, true);
     }
-}*/
+}
 
 global.title = room_next(room);
 room_set_background_colour(global.title,c_blue,1);
-room_goto(global.title);

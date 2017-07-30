@@ -31,28 +31,26 @@ height = ds_grid_height(mapGrid);
 width = ds_grid_width(mapGrid);
 
 // Center the map on the screen
-//mapLeft = (view_wview[0] / 2) - ((width * CELL_WIDTH) / 2);
-//mapTop = (view_hview[0] / 2) - ((height * CELL_HEIGHT) / 2);
+mapLeft = (view_wview[0] / 2) - ((width * CELL_WIDTH) / 2);
+mapTop = (view_hview[0] / 2) - ((height * CELL_HEIGHT) / 2);
 
-/*
+
 for(var i = 0; i < width; i++)
 {
     for(var j = 0; j < height; j++)
     {
         if(mapGrid[# i, j] == "G")
         {
-            tile_add(tileset,0,0,CELL_WIDTH,CELL_HEIGHT,(CELL_WIDTH * i) + mapLeft,(CELL_HEIGHT * j) + mapTop,0);
+            ds_map_add(patches,tile_add(tileset,0,0,CELL_WIDTH,CELL_HEIGHT,(CELL_WIDTH * i) + mapLeft,(CELL_HEIGHT * j) + mapTop,1000),instance_create(0,0,patch));
         }
         else if(mapGrid[# i, j] == "1")
         {
-            tile_add(tileset,0,32,CELL_WIDTH,CELL_HEIGHT,(CELL_WIDTH * i) + mapLeft,(CELL_HEIGHT * j) + mapTop,0);
+            ds_map_add(patches,tile_add(tileset,0,32,CELL_WIDTH,CELL_HEIGHT,(CELL_WIDTH * i) + mapLeft,(CELL_HEIGHT * j) + mapTop,1000),player_1);
         }
         else if(mapGrid[# i, j] == "2")
         {
-            tile_add(tileset,32,32,CELL_WIDTH,CELL_HEIGHT,(CELL_WIDTH * i) + mapLeft,(CELL_HEIGHT * j) + mapTop,0);
+            ds_map_add(patches,tile_add(tileset,32,32,CELL_WIDTH,CELL_HEIGHT,(CELL_WIDTH * i) + mapLeft,(CELL_HEIGHT * j) + mapTop,1000),player_2);
         }
     }
 }
-
-*/
 

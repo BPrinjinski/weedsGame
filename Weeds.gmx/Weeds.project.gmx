@@ -45,10 +45,11 @@
     <object>objects\game_manager</object>
     <object>objects\player</object>
     <object>objects\water_drop</object>
+    <object>objects\patch</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\testRoom</room>
     <room>rooms\initRoom</room>
+    <room>rooms\testRoom</room>
   </rooms>
   <constants number="2">
     <constant name="CELL_HEIGHT">32</constant>

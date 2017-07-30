@@ -3,3 +3,8 @@ for(var i = 0; i < array_length_1d(player_1.water_drops); i++)
 {
     water_check(player_1.water_drops[i]);
 }
+for(var i = 0; i < array_length_1d(player_2.water_drops); i++)
+{
+    water_check(player_2.water_drops[i]);
+}
+
